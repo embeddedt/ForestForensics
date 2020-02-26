@@ -1,0 +1,23 @@
+evidence at scene:
+
+- pellet of bones and feathers - owl
+- a hole in the tree - woodpecker
+- droppings - badger
+- a nest - squirrel
+- dark fur - stoat
+
+suspects:
+
+- great spotted woodpecker
+- grey squirrel
+- tawny owl
+- badger
+- stoat
+
+body:
+
+- victim was partially eaten, ! a plant eater
+- murderer had teeth
+- teeth are sharp
+- teeth are too small for a fox
+- footprint under body
