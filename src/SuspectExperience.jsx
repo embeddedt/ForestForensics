@@ -18,7 +18,7 @@ const SuspectExperience = props => {
         <SuspectList>
             {suspects.map(suspect => {
                 var key = suspect.startsWith("!") ? suspect.substr(1) : suspect;
-                return <Suspect showFootprint={props.idx >= 3} key={key} name={suspect} imgName={key} onRelease={onReleaseSuspect}/>;
+                return <Suspect showFootprint={props.idx >= 2} key={key} name={suspect} imgName={key} onRelease={onReleaseSuspect}/>;
             })}
         </SuspectList>
 
@@ -28,8 +28,8 @@ const SuspectExperience = props => {
             <p>Some clues are listed below; more will appear as we continue investigating.</p>
             <ul>
                 {props.idx >= 0 && <InfoSegment>The body appears to be partially eaten. The murderer must not be a plant eater.</InfoSegment>}
-                {props.idx >= 2 && <InfoSegment>The bite marks on the body show that the murderer's teeth are quite small.</InfoSegment>}
-                {props.idx >= 3 && <>
+                {props.idx >= 1 && <InfoSegment>The bite marks on the body show that the murderer's teeth are quite small.</InfoSegment>}
+                {props.idx >= 2 && <>
                     <InfoSegment>A footprint was discovered under the body. This must be the killer's footprint!</InfoSegment>
                     <center><img className="discovered-footprint" src="images/stoatfootprint.png"/></center>
                 </>}
